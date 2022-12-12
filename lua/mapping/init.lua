@@ -1,0 +1,7 @@
+require('mapping.general')
+--require('mapping.nerdtree')
+require('mapping.tagbar')
+require('mapping.toggleterm')
+require('mapping.nvim-tree')
+require('mapping.telescope-nvim')
+require('mapping.trouble')

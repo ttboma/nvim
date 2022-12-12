@@ -1,0 +1,7 @@
+def test(t,h,ind):
+    cmd = "**reinterpret_cast<"+t+"**>(&"+h+")"
+    if ind > 1:
+            for ind in range(1,ind):
+                    cmd = "**reinterpret_cast<"+t+"**>(&("+cmd+").next)"
+    lldb.debugger.HandleCommand('p '+cmd)
+    lldb.debugger.HandleCommand('p *reinterpret_cast<'+t+'**>(&('+cmd+').next)')
