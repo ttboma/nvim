@@ -15,28 +15,28 @@ require('packer').startup(function(use)
 	-- }}}
 	-- File Management and CLI {{{
 	--use 'preservim/nerdtree' 
-	use {	                 
-  		'nvim-tree/nvim-tree.lua',
+	use {
+			'nvim-tree/nvim-tree.lua',
   		 requires = {
     		'nvim-tree/nvim-web-devicons', -- optional, for file icons
   		 },
   		 tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
-	use 'mhinz/vim-startify' 
+	use 'mhinz/vim-startify'
 	use {
 		'francoiscabrol/ranger.vim',
 		 requires = {'rbgrouleff/bclose.vim'},
 	}
 	use {
-  		'nvim-telescope/telescope.nvim', 
+  		'nvim-telescope/telescope.nvim',
 		 tag = '0.1.0',
   		 requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use 'junegunn/fzf'
 	use 'junegunn/fzf.vim'
 	use {
-		'akinsho/toggleterm.nvim', 
-		 tag = 'v2.*', 
+		'akinsho/toggleterm.nvim',
+		 tag = 'v2.*',
 	}
 	-- }}}
 	-- Git Integration {{{
@@ -85,11 +85,11 @@ require('packer').startup(function(use)
 	-- }}}
 	-- Note {{{
 	use 'vimwiki/vimwiki'
-	use{ 
-		"iamcco/markdown-preview.nvim", 
-		 run = "cd app && npm install", 
-		 setup = function() vim.g.mkdp_filetypes = { "markdown" } end, 
-		 ft = { "markdown" }, 
+	use{
+		"iamcco/markdown-preview.nvim",
+		 run = "cd app && npm install",
+		 setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+		 ft = { "markdown" },
 	}
 	use 'mzlogin/vim-markdown-toc'
 	use {
